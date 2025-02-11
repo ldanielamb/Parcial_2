@@ -27,7 +27,7 @@ def calcular_promedio(p1,p2):
     return prom
 print(f"El promedio es: {calcular_promedio(es_numero(entrada), es_numero(entrada_2))}")
 
-# Desarrollar un algoritmo que determine la mediana de un arreglo de enteros. La mediana es el número que queda en la mitad del arreglo después de ser ordenado
+# Desarrollaar un algoritmo que determine la mediana de un arreglo de enteros. La mediana es el número que queda en la mitad del arreglo después de ser ordenado
 
              
 
