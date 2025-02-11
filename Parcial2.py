@@ -42,7 +42,7 @@ eval(mi_lista_3)
 
 
 
-#Desarrollar un algoritmo que calcule el promedio de un arreglo de reales
+#Desarrollar un algoritmo que calcule el promedio de matrices de reales
 
 A = [
     [1,2],
