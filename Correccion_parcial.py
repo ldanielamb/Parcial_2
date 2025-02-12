@@ -1,6 +1,4 @@
 # Desarrollar un programa que dadas dos listas determine qué elemento tiene la primera lista que no tenga la segunda
-lista_1 = [1,2,3,4,5,6,7,8,9]
-lista_2 = [1,2,3,4,5,6,7,8]
 def diferencia (l1,l2):
     diferencia = set(l1) - set(l2)
     return list(diferencia)
@@ -43,6 +41,51 @@ def mediana(lista):
 print("\n----------------Programa que calcula la mediana de arreglo de enteros----------------")
 entrada = list(input("Digite su lista separada con espacios: ").split())
 print (f"La mediana es: {mediana(orden(es_int(entrada)))}")
+
+
+#Suma y mediana de matrices
+
+A = [
+    [1,2],
+    [3,4]
+]
+B = [
+    [5,6],
+    [7,8]
+]
+suma = [[A[i][j] + B[i][j] for j in range (len(A[0]))] for i in range (len(A))]
+long = len(A) * len(A[0])
+promA = [[elemento / long for elemento in fila] for fila in A]
+
+print("\n---------------------Programa que devuelve el promedio de dos matrices-------------------------")
+print("La matriz 1 es: ")
+for fila in A:
+    print(fila)
+print("La matriz 2 es: ")
+for fila in B:
+    print(fila)
+print("El promedio es: ")
+for A in promA:
+    print(A)
+
+#
+def ingresar_matriz():
+    filas = int(input("Ingrese el número de filas: "))
+    columnas = int(input("Ingrese el número de columnas: "))
+
+    matriz = []
+    for i in range(filas):
+        fila = []
+        for j in range(columnas):
+            elemento = int(input(f"Ingrese el elemento [{i}][{j}]: "))
+            fila.append(elemento)
+        matriz.append(fila)
+    return matriz
+
+#print("Su matriz es: ")
+#for f in ingresar_matriz():
+    print(f)
+
 
 
 
