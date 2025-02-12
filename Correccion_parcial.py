@@ -1,6 +1,9 @@
 # Desarrollar un programa que dadas dos listas determine qué elemento tiene la primera lista que no tenga la segunda
 def diferencia (l1,l2):
-    diferencia = set(l1) - set(l2)
+    if len(set(l1)) == len(set(l2)):
+        diferencia = set(l1) - set(l2)
+    else: 
+        diferencia = set(l2) - set(l1)
     return list(diferencia)
 print("\n----------------Programa que determina el elemento que falta en una lista----------------")
 entrada = list(input("Digite los elementos de su lista separado por espacios: ").split())
